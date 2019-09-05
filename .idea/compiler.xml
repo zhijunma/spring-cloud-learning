@@ -17,6 +17,7 @@
     <bytecodeTargetLevel>
       <module name="eureka-server-1" target="1.8" />
       <module name="feign" target="1.8" />
+      <module name="hystrix" target="1.8" />
       <module name="ribbon" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -28,6 +29,7 @@
       <module name="eureka-server1" options="-parameters" />
       <module name="eureka-server2" options="-parameters" />
       <module name="feign" options="-parameters" />
+      <module name="hystrix" options="-parameters" />
       <module name="ribbon" options="-parameters" />
       <module name="zuul" options="-parameters" />
     </option>
