@@ -13,17 +13,17 @@ public class TestController {
     @Autowired
     private RestTemplate restTemplate;
 
-    @HystrixCommand(fallbackMethod = "test01Fail")
+//    @HystrixCommand(fallbackMethod = "test01Fail")
     @GetMapping("/hello")
     public String getHome() {
 
-        String data = restTemplate.getForObject("http://service-zuul/hello?token=1", String.class);
+        String data = restTemplate.getForObject("http://service-zuul/hello?token=1",String.class);
 
         return data;
 
     }
-    public String test01Fail(){
-        return "Connect server provider fail";
-    }
+//    public String test01Fail(){
+//        return "Connect server provider fail";
+//    }
 
 }
