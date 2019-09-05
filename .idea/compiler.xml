@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="demo20190905" />
+        <module name="eureka-cusromer" />
+        <module name="eureka-register-service" />
+        <module name="eureka-server1" />
+        <module name="eureka-server2" />
+        <module name="zuul" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="eureka-server-1" target="1.8" />
+      <module name="feign" target="1.8" />
+      <module name="ribbon" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="eureka-cusromer" options="-parameters" />
+      <module name="eureka-register-service" options="-parameters" />
+      <module name="eureka-server-1" options="-parameters" />
+      <module name="eureka-server1" options="-parameters" />
+      <module name="eureka-server2" options="-parameters" />
+      <module name="feign" options="-parameters" />
+      <module name="ribbon" options="-parameters" />
+      <module name="zuul" options="-parameters" />
+    </option>
+  </component>
+</project>
